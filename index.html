@@ -55,9 +55,9 @@
         }
     </style>
 <script>
-			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Page Caching Started!!";};
+			window.applicationCache.ondownloading=function(){document.getElementById("progress").innerHTML="Guardando caché de la página";};
 			window.applicationCache.onprogress=function(a){document.getElementById("progress").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%";};
-			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Page Cached Successfully!!";setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page !!"; }, 1500);};
+			window.applicationCache.oncached=function(){document.getElementById("progress").innerHTML="Caché guardado satisfactoriamente";setTimeout(function(){document.getElementById("progress").innerHTML="Turn Off the Internet & Reopen the Page !!"; }, 1500);};
 			window.applicationCache.onnoupdate=function(){poc();};
 	        window.applicationCache.onerror=function(){poc();};
 </script>
@@ -89,7 +89,7 @@
     </div>
 
     <div id="allset" class="info" style="display:none;">
-        El exploit ha cargado, cierra el navegador y disfruta!!
+        ¡¡El exploit ha cargado, cierra el navegador y disfruta!!
     </div>
 
 </body>
